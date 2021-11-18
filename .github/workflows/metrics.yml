@@ -14,6 +14,7 @@ jobs:
         with:
           # Your GitHub token
           token: ${{ secrets.JURUBU_METRICS_TOKEN }}
+          user: Jurubu Entertainment
           # ... other options
           # Only display "header" and "repositories" sections
           base: header, community, activity, repositories, metadata

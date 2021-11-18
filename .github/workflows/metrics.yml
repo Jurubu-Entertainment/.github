@@ -14,3 +14,26 @@ jobs:
         with:
           # Your GitHub token
           token: ${{ secrets.JURUBU_METRICS_TOKEN }}
+          # ... other options
+          # Only display "header" and "repositories" sections
+          base: header, community, activity, repositories, metadata
+          # Query only last 100 repositories
+          repositories: 100
+          # Query repositories 25 by 25 (lower this to avoid API timeouts)
+          repositories_batch: 25
+          # Don't include forks
+          repositories_forks: no
+          # Display only repositories where user is owner or collaborator
+          repositories_affiliations: owner, collaborator
+          # Exclude automatically these repositories from plugins allowing a skip list
+          repositories_skipped: lowlighter/lowlighter
+          # Handle you use when authoring commits, which can be used to filter commits in other plugins
+          commits_authoring: Jurubu-Entertainment
+          # Set your timezone
+          config_timezone: Africa/Johannesburg
+          # Set the amount of times that the rendering of the metrics can be retried
+          retries: 3
+          # Set the delay between metric rendering retries
+          retries_delay: 300
+          # LINES PLUGIN
+          # Enable Lines plugin

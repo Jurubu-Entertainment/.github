@@ -1,1 +1,1 @@
-![Metrics](https://github.com/Jurubu-Entertainment/.github/blob/main/github-metrics.svg)
+![Metrics](https://github.com/Talltale-Studios/.github/blob/main/github-metrics.svg)

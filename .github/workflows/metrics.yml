@@ -13,8 +13,8 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
-          token: ${{ secrets.JURUBU_METRICS_TOKEN }}
-          user: Jurubu-Entertainment
+          token: ${{ secrets.TALLTALE_METRICS_TOKEN }}
+          user: Talltale-Studios
           # ... other options
           # Only display "header" and "repositories" sections
           base: header, community, activity, repositories, metadata
@@ -29,7 +29,7 @@ jobs:
           # Exclude automatically these repositories from plugins allowing a skip list
           repositories_skipped: lowlighter/lowlighter
           # Handle you use when authoring commits, which can be used to filter commits in other plugins
-          commits_authoring: Jurubu-Entertainment
+          commits_authoring: Talltale-Studios
           # Set your timezone
           config_timezone: Africa/Johannesburg
           # Set the amount of times that the rendering of the metrics can be retried
